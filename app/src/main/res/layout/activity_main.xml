@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/tab_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#3C3C3C">
+        <TextView
+            android:id="@+id/txt_top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#555555"
+            android:text= "HI!Go" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#F7F7F7"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/tab_menu"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/txt_deal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#E6E6E6"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/home"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:text="首页"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/txt_poi"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#E6E6E6"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/found"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:text="发现"
+            android:textSize="10sp"/>
+
+        <Button
+            android:id="@+id/txt_user"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#E6E6E6"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/chat"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:text="论坛"
+            android:textSize="10sp"/>
+
+        <Button
+            android:id="@+id/txt_more"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#E6E6E6"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/me"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:text="我"
+            android:textSize="10sp"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/div_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#808080"
+        android:layout_above="@id/tab_menu"/>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tab_title"
+        android:layout_above="@id/tab_menu"
+        android:background="#FFFFFF">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp">
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </FrameLayout>
+
+
+</RelativeLayout>

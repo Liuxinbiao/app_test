@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".together_trip_Activity">
+    <TextView
+        android:id="@+id/guide_rank_textView6"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="同城游伴"
+        android:paddingTop="4dp"
+        android:paddingLeft="150dp"
+        android:textSize="20sp"
+        android:background="@drawable/bg_tab_menu"/>
+
+    <TextView
+        android:id="@+id/together_trip_textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="59dp"
+        android:text="景点"
+        android:textSize="19sp"
+        android:textColor="#3C3C3C"/>
+
+    <TextView
+        android:id="@+id/together_trip_textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/together_trip_textView6"
+        android:layout_marginEnd="68dp"
+        android:text="要求"
+        android:textColor="#3C3C3C"
+        android:textSize="19sp" />
+
+
+    <ImageView
+        android:id="@+id/together_trip_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/together_trip_textView8"
+        app:srcCompat="@drawable/changcheng3" />
+
+    <TextView
+        android:id="@+id/together_trip_textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="99dp"
+        android:text="长城" />
+
+    <TextView
+        android:id="@+id/together_trip_textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/together_trip_imageView2"
+        android:layout_alignParentStart="true"
+        android:text="鸟巢" />
+
+    <ImageView
+        android:id="@+id/together_trip_imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="162dp"
+        app:srcCompat="@drawable/beijing_niaochao" />
+
+    <TextView
+        android:id="@+id/together_trip_textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/together_trip_imageView6"
+        android:layout_alignStart="@+id/together_trip_textView8"
+        android:text="天坛" />
+
+    <ImageView
+        android:id="@+id/together_trip_imageView6"
+        android:layout_width="148dp"
+        android:layout_height="93dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="38dp"
+        app:srcCompat="@drawable/beijing_tiantan" />
+
+    <TextView
+        android:id="@+id/together_trip_textView16"
+        android:layout_width="210dp"
+        android:layout_height="90dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="126dp"
+        android:layout_marginLeft="4dp"
+        android:text="男性优先，同行人员有3人。希望游伴性格活泼，有来过长城的经验，还希望游伴拍照有水平,符合者请联系。"
+        android:textColor="#333333"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/together_trip_textView17"
+        android:layout_width="210dp"
+        android:layout_height="90dp"
+        android:layout_alignBottom="@+id/together_trip_imageView2"
+        android:layout_marginLeft="4dp"
+        android:layout_alignParentEnd="true"
+        android:text="自己一个人，性格外向，对体育感兴趣，希望游伴性格跟我一样，对体育运动感兴趣，符合者请联系。"
+        android:textColor="#333333"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/together_trip_textView18"
+        android:layout_width="210dp"
+        android:layout_height="80dp"
+        android:layout_alignBottom="@+id/together_trip_imageView6"
+        android:layout_marginLeft="4dp"
+        android:layout_alignParentEnd="true"
+        android:text="学生一枚，女，希望游伴也是女性，学生更好，拍照水平比较高。符合者请联系。"
+        android:textColor="#333333"
+        android:textSize="17sp" />
+
+
+</RelativeLayout>

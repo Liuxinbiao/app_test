@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".beijing_view_detail_Activity">
+
+    <TextView
+        android:id="@+id/chagncheng_textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="25dp"
+        android:text="景点介绍"
+        android:textSize="20sp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/chagncheng_textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/chagncheng_textView6"
+        android:layout_marginTop="73dp"
+        android:text="颐和园原是清朝帝王的行宫和花园，又称清漪园，以昆明湖、万寿山为基址，按照江南园林的设计手法建造，是我国现存规模非常大，保存非常完整的皇家园林，景色极具优雅，还有很多珍贵的文物，被誉为“皇家园林博物馆”。区域概览颐和园规模宏大，全园可分3个区域：以仁寿殿为中心的政治活动区；以玉澜堂、乐寿堂为主体的帝后生活区；以长廊沿线、后山、西区为主的苑园游览区。整个园区约四分之三为昆明湖所占据，湖畔有亭、台、楼、阁、廊、榭等建筑物百余座三千余间。" />
+
+    <TextView
+        android:id="@+id/chagncheng_textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/chagncheng_textView6"
+        android:layout_marginBottom="235dp"
+        android:text="风景图片"
+        android:textSize="20sp"
+        android:textColor="#000000" />
+
+    <ImageView
+        android:id="@+id/yiheyuan_imageView"
+        android:layout_width="249dp"
+        android:layout_height="168dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        app:srcCompat="@drawable/yiheyuan" />
+
+    <ImageView
+        android:id="@+id/yiheyuan_imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/yiheyuan_imageView3"
+        android:layout_alignParentEnd="true"
+        app:srcCompat="@drawable/yiheyuan1" />
+
+    <ImageView
+        android:id="@+id/yiheyuan_imageView3"
+        android:layout_width="135dp"
+        android:layout_height="104dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/yiheyuan_imageView"
+        app:srcCompat="@drawable/yiheyuan2" />
+
+
+
+
+</RelativeLayout>

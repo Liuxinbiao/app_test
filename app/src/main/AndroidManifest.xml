@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bilibili">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="HI!Go"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".luntan_start_menuActivity" />
+        <activity android:name=".user_menu_Activity" />
+        <activity android:name=".User_xiaoxiActivity" />
+        <activity android:name=".User_guanzhu_Activity" />
+        <activity android:name=".user_shoucang_Activity" />
+        <activity android:name=".user_guide_Activity" />
+        <activity android:name=".trip_mate_Activity" />
+        <activity android:name=".user_evaluate_Activity" />
+        <activity android:name=".user_settingActivity" />
+        <activity android:name=".user_person_data_Activity" />
+        <activity android:name=".user_pravicy_Activity" />
+        <activity android:name=".user_id_bind_manager_Activity" />
+        <activity android:name=".user_cache_managerActivity" />
+        <activity android:name=".user_log_inActivity" />
+        <activity android:name=".user_log_out_Activity" />
+        <activity android:name=".luntan_beijing_Activity" />
+        <activity android:name=".luntan_dali_Activity" />
+        <activity android:name=".luntan_hangzhou_Activity" />
+        <activity android:name=".luntan_tianjin_Activity" />
+        <activity android:name=".luntan_mangu_Activity" />
+        <activity android:name=".luntan_shanghai_Activity" />
+        <activity android:name=".luntan_tangshan_Activity" />
+        <activity android:name=".luntan_chengdu_Activity" />
+        <activity android:name=".beijing_view_detail_Activity" />
+        <activity android:name=".guide_people_Activity" />
+        <activity android:name=".guide_rank_Activity" />
+        <activity android:name=".together_trip_Activity" />
+        <activity android:name=".QA_Activity" />
+        <activity android:name=".beijingnanluoguxing_detail_Activity" />
+        <activity android:name=".tiantan_Activity" />
+        <activity android:name=".niaochao_Activity" />
+        <activity android:name=".yiheyuan_Activity"></activity>
+    </application>
+
+</manifest>

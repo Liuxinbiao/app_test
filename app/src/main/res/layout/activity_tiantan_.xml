@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".beijing_view_detail_Activity">
+
+    <TextView
+        android:id="@+id/chagncheng_textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="25dp"
+        android:text="景点介绍"
+        android:textSize="20sp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/chagncheng_textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/chagncheng_textView6"
+        android:layout_marginTop="73dp"
+        android:text="天坛是明、清两朝皇帝祭天、求雨和祈祷丰年的专用祭坛，是全国著名的古建筑。坛域北呈圆形，南为方形，寓意“天圆地方”，整个天坛分为内坛、外坛两部分，祈年殿、回音壁等耳熟能详的建筑都位于内坛。在皇穹宇殿前到大门中间的石板路上，由北向南的三块石板叫做三音石。在皇穹宇门窗关闭而且附近没有障碍的情况下，站立于第一块石板上击掌，可听到回音一声；于第二块石板上击掌，可听到回音两声；于第三块石板上击掌，可听到回音三声。"/>
+    <TextView
+        android:id="@+id/chagncheng_textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/chagncheng_textView6"
+        android:layout_marginBottom="235dp"
+        android:text="风景图片"
+        android:textSize="20sp"
+        android:textColor="#000000" />
+
+
+    <ImageView
+        android:id="@+id/fengji_beijing1"
+        android:layout_width="226dp"
+        android:layout_height="98dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/chagncheng_textView6"
+        android:src="@drawable/tiantan3" />
+
+
+    <ImageView
+        android:id="@+id/nanluoguxiang_imageView2"
+        android:layout_width="181dp"
+        android:layout_height="119dp"
+        android:layout_above="@+id/fengji_beijing1"
+        android:layout_alignEnd="@+id/fengji_beijing1"
+        app:srcCompat="@drawable/tiantan2" />
+
+    <ImageView
+        android:id="@+id/niaochao_imageView"
+        android:layout_width="149dp"
+        android:layout_height="193dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        app:srcCompat="@drawable/tiantan1" />
+
+
+</RelativeLayout>

@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/tab_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#3C3C3C">
+        <TextView
+            android:id="@+id/txt_top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#555555"
+            android:text= "HI!Go" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#F7F7F7"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/tab_menu"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/txt_deal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#E6E6E6"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/home"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:text="首页"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/txt_poi"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#E6E6E6"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/found"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:text="发现"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/txt_user"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#E6E6E6"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/chat"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:text="论坛"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/txt_more"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#E6E6E6"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/me"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:text="我"
+            android:textSize="10sp"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/div_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#808080"
+        android:layout_above="@id/tab_menu"/>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tab_title"
+        android:layout_above="@id/tab_menu"
+        android:background="#FFFFFF">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp">
+
+
+            <Button
+                android:id="@+id/luntan_daoyou"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="#EEEEEE"
+                android:text="当地导游"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/luntan_youban"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/luntan_daoyou"
+                android:background="#EEEEEE"
+                android:text="同城游伴"
+                android:textColor="#444444"
+                android:textSize="15sp"
+                />
+
+            <Button
+                android:id="@+id/luntan_daoyoubang"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/luntan_youban"
+                android:background="#EEEEEE"
+                android:text="导游榜"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+
+            <Button
+                android:id="@+id/luntan_QA"
+                android:layout_width="84dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/luntan_daoyoubang"
+                android:background="#EEEEEE"
+                android:text="问答"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/hanghzhou_imageView"
+                android:layout_width="122dp"
+                android:layout_height="90dp"
+                android:layout_above="@+id/hanghzhou_imageView2"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="-141dp"
+                app:srcCompat="@drawable/hanghzou_leifengta" />
+
+            <ImageView
+                android:id="@+id/hanghzhou_imageView2"
+                android:layout_width="121dp"
+                android:layout_height="89dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="141dp"
+                app:srcCompat="@drawable/hanghzou_lingyinsi" />
+
+            <ImageView
+                android:id="@+id/hanghzhou_imageView3"
+                android:layout_width="122dp"
+                android:layout_height="117dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/hanghzhou_imageView2"
+                android:layout_marginTop="-17dp"
+                app:srcCompat="@drawable/hanghzou_songcheng" />
+
+            <ImageView
+                android:id="@+id/hanghzhou_imageView4"
+                android:layout_width="121dp"
+                android:layout_height="93dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                app:srcCompat="@drawable/hanghzou_xihu" />
+
+            <TextView
+                android:id="@+id/hanghzhou_textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="136dp"
+                android:layout_marginTop="60dp"
+                android:text="雷峰塔" />
+
+            <TextView
+                android:id="@+id/hanghzhou_textView7"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="88dp"
+                android:maxLines="2"
+                android:text="雷峰塔又名“黄妃塔”，位于西湖南岸夕照山的雷峰上。很多人的“雷峰塔情结" />
+
+            <TextView
+                android:id="@+id/hanghzhou_textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="152dp"
+                android:layout_toEndOf="@+id/luntan_youban"
+                android:text="灵隐寺" />
+
+            <TextView
+                android:id="@+id/hanghzhou_textView13"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="178dp"
+                android:maxLines="2"
+                android:text="灵隐寺又称“云林寺”，坐落于西湖西面的灵隐山麓。寺内环境清幽，是杭州" />
+
+            <TextView
+                android:id="@+id/hanghzhou_textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hanghzhou_imageView2"
+                android:layout_toEndOf="@+id/luntan_youban"
+                android:text="宋城" />
+
+            <TextView
+                android:id="@+id/hanghzhou_textView16"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="111dp"
+                android:maxLines="2"
+                android:text="宋城位于杭州西南市郊，是一座大型宋代文化主题乐园。充满宋代风情的仿古" />
+
+            <TextView
+                android:id="@+id/hanghzhou_textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="61dp"
+                android:layout_toEndOf="@+id/luntan_youban"
+                android:text="西湖" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="32dp"
+                android:maxLines="2"
+                android:text="西湖无疑是杭州之美的代表，著名的“西湖十景”环绕湖边，自然与人文相" />
+
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

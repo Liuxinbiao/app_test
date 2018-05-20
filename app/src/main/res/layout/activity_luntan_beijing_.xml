@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/tab_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#3C3C3C">
+        <TextView
+            android:id="@+id/txt_top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#555555"
+            android:text= "HI!Go" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#F7F7F7"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/tab_menu"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/beijing_txt_deal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#E6E6E6"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/home"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:text="首页"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/beijing_txt_poi"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#E6E6E6"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/found"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:text="发现"
+            android:textSize="10sp"/>
+
+        <Button
+            android:id="@+id/beijing_txt_user"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#E6E6E6"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/chat"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:text="论坛"
+            android:textSize="10sp"/>
+
+        <Button
+            android:id="@+id/beijing_txt_more"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#E6E6E6"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/me"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:text="我"
+            android:textSize="10sp"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/div_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#808080"
+        android:layout_above="@id/tab_menu"/>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tab_title"
+        android:layout_above="@id/tab_menu"
+        android:background="#FFFFFF">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp">
+
+
+            <Button
+                android:id="@+id/luntan_daoyou"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="#EEEEEE"
+                android:text="当地导游"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/luntan_youban"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/luntan_daoyou"
+                android:background="#EEEEEE"
+                android:text="同城游伴"
+                android:textColor="#444444"
+                android:textSize="15sp"
+                />
+
+            <Button
+                android:id="@+id/luntan_daoyoubang"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/luntan_youban"
+                android:background="#EEEEEE"
+                android:text="导游榜"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+
+            <Button
+                android:id="@+id/luntan_QA"
+                android:layout_width="84dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/luntan_daoyoubang"
+                android:background="#EEEEEE"
+                android:text="问答"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/beijing_changcheng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/luntan_daoyou"
+                android:layout_marginStart="25dp"
+                app:srcCompat="@drawable/beijing_changcheng" />
+
+            <ImageView
+                android:id="@+id/beijing_nanluoguxiang"
+                android:layout_width="93dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/beijing_changcheng"
+                android:layout_marginTop="107dp"
+                app:srcCompat="@drawable/beijing_nanluoguxiang" />
+
+            <ImageView
+                android:id="@+id/beijing_niaochao"
+                android:layout_width="89dp"
+                android:layout_height="62dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/beijing_changcheng"
+                android:layout_marginBottom="84dp"
+                app:srcCompat="@drawable/beijing_niaochao" />
+
+            <ImageView
+                android:id="@+id/beijing_tiantan"
+                android:layout_width="92dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/beijing_changcheng"
+                android:layout_marginBottom="157dp"
+                app:srcCompat="@drawable/beijing_tiantan" />
+
+            <ImageView
+                android:id="@+id/beijing_yiheyuan"
+                android:layout_width="92dp"
+                android:layout_height="65dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/beijing_changcheng"
+                app:srcCompat="@drawable/beijing_yiheyuan" />
+
+            <TextView
+                android:id="@+id/beijing_blank1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/beijing_nanluoguxiang"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="-107dp"
+                android:background="#EEEEEE" />
+
+            <TextView
+                android:id="@+id/textView66"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/beijing_tiantan"
+                android:layout_alignStart="@+id/beijing_changcheng"
+                android:background="#EEEEEE" />
+
+            <TextView
+                android:id="@+id/beijing_blank2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/beijing_niaochao"
+                android:layout_alignStart="@+id/beijing_changcheng"
+                android:background="#EEEEEE" />
+
+            <TextView
+                android:id="@+id/beijing_blank3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/beijing_niaochao"
+                android:layout_marginTop="-84dp"
+                android:background="#EEEEEE" />
+
+            <TextView
+                android:id="@+id/beijing_changcheng1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/luntan_daoyou"
+                android:clickable="true"
+                android:layout_centerHorizontal="true"
+                android:text="八达岭长城" />
+
+            <TextView
+                android:id="@+id/beijing_nanluo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:clickable="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="115dp"
+                android:text="南锣鼓巷" />
+
+            <TextView
+                android:id="@+id/beijing_tiantan1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:layout_centerInParent="true"
+                android:text="天坛" />
+
+            <TextView
+                android:id="@+id/beijing_niaochao1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:layout_above="@+id/beijing_niaochao2"
+                android:layout_centerHorizontal="true"
+                android:text="鸟巢" />
+
+            <TextView
+                android:id="@+id/beijing_yiheyuan1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:clickable="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="38dp"
+                android:text="颐和园" />
+
+            <TextView
+                android:id="@+id/beijing_changcheng2"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/beijing_blank1"
+                android:clickable="true"
+                android:layout_alignParentEnd="true"
+                android:maxLines="1"
+                android:text="八达岭长城号称天下九塞之一，风光集巍峨险峻、秀丽苍翠" />
+
+            <TextView
+                android:id="@+id/beijing_nanluo2"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:layout_above="@+id/textView66"
+                android:layout_alignParentEnd="true"
+                android:maxLines="1"
+                android:text="南锣鼓巷地处北京的市中心，是一条集小资情调和老北京韵..." />
+
+            <TextView
+                android:id="@+id/beijing_tiantan2"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/beijing_blank2"
+                android:layout_alignParentEnd="true"
+                android:clickable="true"
+                android:maxLines="1"
+                android:text="天坛是明、清两朝皇帝祭天、求雨和祈" />
+
+            <TextView
+                android:id="@+id/beijing_niaochao2"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:clickable="true"
+                android:layout_marginBottom="84dp"
+                android:maxLines="2"
+                android:text="鸟巢（国家体育场）位于北京中轴线的北端，是2008年北京奥运会的主体育场" />
+
+            <TextView
+                android:id="@+id/beijing_yiheyuan2"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:clickable="true"
+                android:layout_below="@+id/beijing_yiheyuan1"
+                android:layout_marginTop="-38dp"
+                android:maxLines="1"
+                android:text="颐和园原是清朝帝王的行宫和花园，又称清漪园，以昆明湖." />
+
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".guide_rank_Activity">
+
+    <TextView
+        android:id="@+id/guide_rank_textView6"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="本地导游榜"
+        android:paddingTop="4dp"
+        android:paddingLeft="130dp"
+        android:textSize="20sp"
+        android:background="@drawable/bg_tab_menu"/>
+
+    <TextView
+        android:id="@+id/guide_rank_textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="61dp"
+        android:text="第一名"
+        android:textColor="#444444"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/guide_rank_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="92dp"
+        app:srcCompat="@drawable/user_icon" />
+
+    <TextView
+        android:id="@+id/guide_rank_textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/guide_rank_textView7"
+        android:layout_marginTop="177dp"
+        android:text="第二名"
+        android:textColor="#444444"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/guide_rank_imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="212dp"
+        app:srcCompat="@drawable/user_icon" />
+
+    <TextView
+        android:id="@+id/guide_rank_textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/guide_rank_textView7"
+        android:layout_marginBottom="195dp"
+        android:text="第三名"
+        android:textColor="#444444"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/guide_rank_imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="114dp"
+        app:srcCompat="@drawable/user_icon" />
+
+    <TextView
+        android:id="@+id/guide_rank_textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/guide_rank_textView7"
+        android:layout_marginBottom="76dp"
+        android:text="第四名"
+        android:textColor="#444444"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        app:srcCompat="@drawable/user_icon" />
+
+    <TextView
+        android:id="@+id/guide_rank_guide_rank_textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView15"
+        android:layout_alignTop="@+id/guide_rank_imageView"
+        android:text="姓名"
+        android:textColor="#444444"/>
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/guide_rank_imageView"
+        android:layout_alignStart="@+id/guide_rank_textView16"
+        android:text="就职经历"
+        android:textColor="#444444"/>
+
+    <TextView
+        android:id="@+id/guide_rank_textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/guide_rank_imageView2"
+        android:layout_marginStart="152dp"
+        android:text="姓名"
+        android:textColor="#444444" />
+
+    <TextView
+        android:id="@+id/guide_rank_textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/guide_rank_imageView2"
+        android:layout_alignStart="@+id/guide_rank_textView16"
+        android:text="就职经历"
+        android:textColor="#444444" />
+
+    <TextView
+        android:id="@+id/guide_rank_textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView15"
+        android:layout_alignTop="@+id/guide_rank_imageView3"
+        android:text="姓名"
+        android:textColor="#444444" />
+
+    <TextView
+        android:id="@+id/guide_rank_textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/guide_rank_imageView3"
+        android:layout_alignStart="@+id/textView15"
+        android:text="就职经历"
+        android:textColor="#444444" />
+
+    <TextView
+        android:id="@+id/guide_rank_textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView15"
+        android:layout_alignTop="@+id/imageView4"
+        android:text="姓名"
+        android:textColor="#444444" />
+
+    <TextView
+        android:id="@+id/guide_rank_textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/guide_rank_guide_rank_textView13"
+        android:text="就职经历"
+        android:textColor="#444444" />
+
+    <TextView
+        android:id="@+id/guide_rank_textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/guide_rank_imageView"
+        android:layout_marginEnd="84dp"
+        android:text="张三"
+        android:textColor="#444444" />
+
+    <TextView
+        android:id="@+id/guide_rank_textView25"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/guide_rank_imageView"
+        android:layout_alignStart="@+id/guide_rank_textView24"
+        android:maxLines="1"
+        android:text="以当导游3年，出行三次"
+        android:textColor="#444444" />
+
+    <TextView
+        android:id="@+id/guide_rank_textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/guide_rank_textView24"
+        android:layout_alignTop="@+id/guide_rank_imageView2"
+        android:text="王麻子"
+        android:textColor="#444444" />
+
+    <TextView
+        android:id="@+id/guide_rank_textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/guide_rank_imageView2"
+        android:layout_alignStart="@+id/guide_rank_textView24"
+        android:maxLines="1"
+        android:text="当导游出行5次，"
+        android:textColor="#444444" />
+
+    <TextView
+        android:id="@+id/guide_rank_textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/guide_rank_textView24"
+        android:layout_alignTop="@+id/guide_rank_imageView3"
+        android:text="李四"
+        android:textColor="#444444" />
+
+    <TextView
+        android:id="@+id/guide_rank_textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/guide_rank_imageView3"
+        android:layout_alignStart="@+id/guide_rank_textView24"
+        android:maxLines="1"
+        android:text="国内xx大学毕业，"
+        android:textColor="#444444" />
+
+    <TextView
+        android:id="@+id/guide_rank_textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/guide_rank_textView24"
+        android:layout_alignTop="@+id/imageView4"
+        android:text="桃五"
+        android:textColor="#444444" />
+
+    <TextView
+        android:id="@+id/guide_rank_textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/guide_rank_textView24"
+        android:maxLines="1"
+        android:text="xx景点出行十余次"
+        android:textColor="#444444" />
+</RelativeLayout>

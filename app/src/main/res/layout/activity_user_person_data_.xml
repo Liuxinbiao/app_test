@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/person_data"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_weight="1"
+        android:background="@drawable/bg_tab_menu"
+        android:paddingLeft="9dp"
+        android:paddingTop="10sp"
+        android:text="← 个人资料"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="3dp" />
+
+    <TextView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="92dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/person_data"
+        android:paddingTop="25dp"
+        android:text="更换头像"
+        android:textColor="#333333"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="40dp" />
+
+    <TextView
+        android:id="@+id/person_data_nicheng"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/icon"
+        android:text="昵称"
+        android:textColor="#333333"
+        android:textSize="17dp"
+        android:paddingTop="9dp"
+        android:background="@drawable/bg_btn4_white"/>
+
+    <TextView
+        android:id="@+id/person_data_city"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/person_data_nicheng"
+        android:text="所在城市"
+        android:textColor="#333333"
+        android:textSize="17dp"
+        android:background="@drawable/bg_btn4_white"/>
+
+    <TextView
+        android:id="@+id/person_data_jianjie"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/person_data_city"
+        android:text="简介"
+        android:textColor="#333333"
+        android:textSize="17dp"
+        android:background="@drawable/bg_btn4_white"/>
+
+
+    <EditText
+        android:id="@+id/person_data_nicheng2"
+        android:layout_width="338dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/icon"
+        android:layout_marginStart="46dp"
+        android:background="@drawable/bg_btn4_white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="支持4-30个中英文、数字、横线"
+        android:textColor="#A2A2A2" />
+
+    <ImageView
+        android:id="@+id/person_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="89dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/person_data"
+        app:srcCompat="@drawable/user_icon" />
+
+    <EditText
+        android:id="@+id/person_data_jianjie2"
+        android:layout_width="match_parent"
+        android:layout_height="121dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/person_data_jianjie"
+        android:background="@drawable/bg_btn4_white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="个人简介" />
+
+
+
+
+
+</RelativeLayout>

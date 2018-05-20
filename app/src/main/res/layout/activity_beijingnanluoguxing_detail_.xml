@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".beijing_view_detail_Activity">
+
+    <TextView
+        android:id="@+id/chagncheng_textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="25dp"
+        android:text="景点介绍"
+        android:textSize="20sp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/chagncheng_textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/chagncheng_textView6"
+        android:layout_marginTop="73dp"
+        android:text="南锣鼓巷地处北京的市中心，是一条集小资情调和老北京韵味为一体的胡同，也是北京的时尚地标之一。这里汇集了很多文艺的特色小店，还有种类众多的小吃，年轻人尤其是文艺青年，往往会把这里当做游玩北京的必选去处。美食推荐南锣鼓巷的美食最出名的要属文宇奶酪店（南锣鼓巷49号），原味奶酪、双皮奶和酸梅汤是它的特色，永远排长队，而且基本每天15:00就售罄了。过客（南锣鼓巷108号）和咂摸（南锣鼓巷106号）都有创意十足的风味披萨，过客的羊肉串披萨，咂摸的宫保鸡丁披萨、北京烤鸭披萨都很棒。" />
+
+    <TextView
+        android:id="@+id/chagncheng_textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/chagncheng_textView6"
+        android:layout_marginBottom="235dp"
+        android:text="风景图片"
+        android:textSize="20sp"
+        android:textColor="#000000" />
+
+
+    <ImageView
+        android:id="@+id/fengji_beijing1"
+        android:layout_width="156dp"
+        android:layout_height="117dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/nanluguxiang1" />
+
+
+
+    <ImageView
+        android:id="@+id/fengji_beijing3"
+        android:layout_width="207dp"
+        android:layout_height="116dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="12dp"
+        android:src="@drawable/nanluguxiang3" />
+
+    <ImageView
+        android:id="@+id/nanluoguxiang_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/fengji_beijing3"
+        android:layout_below="@+id/chagncheng_textView8"
+        android:layout_marginTop="-235dp"
+        app:srcCompat="@drawable/pngnanluguxiang4" />
+
+    <ImageView
+        android:id="@+id/nanluoguxiang_imageView2"
+        android:layout_width="181dp"
+        android:layout_height="119dp"
+        android:layout_above="@+id/fengji_beijing1"
+        android:layout_alignParentStart="true"
+        app:srcCompat="@drawable/nanluguxiang2" />
+
+
+</RelativeLayout>

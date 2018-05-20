@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/tab_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#3C3C3C">
+        <TextView
+            android:id="@+id/txt_top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#555555"
+            android:text= "HI!Go" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#F7F7F7"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/tab_menu"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/txt_deal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#E6E6E6"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/home"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:text="首页"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/txt_poi"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#E6E6E6"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/found"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:text="发现"
+            android:textSize="10sp"/>
+
+        <Button
+            android:id="@+id/txt_user"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#E6E6E6"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/chat"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:text="论坛"
+            android:textSize="10sp"/>
+
+        <Button
+            android:id="@+id/txt_more"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#E6E6E6"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/me"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:text="我"
+            android:textSize="10sp"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/div_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#808080"
+        android:layout_above="@id/tab_menu"/>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tab_title"
+        android:layout_above="@id/tab_menu"
+        android:background="#FFFFFF">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp">
+
+
+            <Button
+                android:id="@+id/luntan_daoyou"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="#EEEEEE"
+                android:text="当地导游"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/luntan_youban"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/luntan_daoyou"
+                android:background="#EEEEEE"
+                android:text="同城游伴"
+                android:textColor="#444444"
+                android:textSize="15sp"
+                />
+
+            <Button
+                android:id="@+id/luntan_daoyoubang"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/luntan_youban"
+                android:background="#EEEEEE"
+                android:text="导游榜"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+
+            <Button
+                android:id="@+id/luntan_QA"
+                android:layout_width="84dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/luntan_daoyoubang"
+                android:background="#EEEEEE"
+                android:text="  问答"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/tianjin_imageView"
+                android:layout_width="93dp"
+                android:layout_height="65dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/luntan_daoyou"
+                app:srcCompat="@drawable/tianjin_tianjinzhiyan" />
+
+            <ImageView
+                android:id="@+id/tianjin_imageView2"
+                android:layout_width="93dp"
+                android:layout_height="62dp"
+                android:layout_above="@+id/tianjin_imageView4"
+                android:layout_alignParentStart="true"
+                app:srcCompat="@drawable/tianjin_haihe" />
+
+            <ImageView
+                android:id="@+id/tianjin_imageView4"
+                android:layout_width="93dp"
+                android:layout_height="68dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="75dp"
+                app:srcCompat="@drawable/tianjin_shuishangleyuan" />
+
+            <ImageView
+                android:id="@+id/tianjin_imageView5"
+                android:layout_width="93dp"
+                android:layout_height="72dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="114dp"
+                app:srcCompat="@drawable/tianjin_yidalifengjingqu" />
+
+            <ImageView
+                android:id="@+id/tianjin_imageView7"
+                android:layout_width="93dp"
+                android:layout_height="67dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                app:srcCompat="@drawable/tianjin_cifangzi" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:layout_above="@+id/tianjin_imageView5"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="-114dp"
+                android:background="#EEEEEE" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tianjin_imageView2"
+                android:layout_alignParentStart="true"
+                android:background="#EEEEEE" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="130dp"
+                android:background="#EEEEEE" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tianjin_imageView7"
+                android:layout_alignParentStart="true"
+                android:background="#EEEEEE" />
+
+            <TextView
+                android:id="@+id/tianjin_textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/luntan_daoyou"
+                android:layout_centerHorizontal="true"
+                android:text="天津之眼" />
+
+            <TextView
+                android:id="@+id/tianjin_textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="75dp"
+                android:layout_toEndOf="@+id/luntan_daoyou"
+                android:maxLines="1"
+                android:text="天津之眼是一座横跨在海河上的摩天轮" />
+
+            <TextView
+                android:id="@+id/tianjin_textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/tianjin_imageView5"
+                android:layout_centerHorizontal="true"
+                android:text="意大利风景区" />
+
+            <TextView
+                android:id="@+id/tianjin_textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/tianjin_textView6"
+                android:layout_marginTop="150dp"
+                android:maxLines="1"
+                android:text="意大利风情区位于天津市中心，在这里有" />
+
+            <TextView
+                android:id="@+id/tianjin_textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="176dp"
+                android:text="海河" />
+
+            <TextView
+                android:id="@+id/tianjin_textView11"
+                android:layout_width="269dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tianjin_textView10"
+                android:layout_marginTop="-176dp"
+                android:layout_toEndOf="@+id/luntan_daoyou"
+                android:maxLines="1"
+                android:text="海河穿天津城区而过，是天津的母亲河。两" />
+
+            <TextView
+                android:id="@+id/tianjin_textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-130dp"
+                android:text="水上乐园" />
+
+            <TextView
+                android:id="@+id/tianjin_textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/textView4"
+                android:layout_alignStart="@+id/tianjin_textView11"
+                android:maxLines="1"
+                android:text="公园由三座大湖和十一座岛屿组成，有树" />
+
+            <TextView
+                android:id="@+id/tianjin_textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/tianjin_imageView7"
+                android:layout_centerHorizontal="true"
+                android:text="瓷房子" />
+
+            <TextView
+                android:id="@+id/tianjin_textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toEndOf="@+id/luntan_daoyou"
+                android:maxLines="1"
+                android:text="瓷房子是一座动用了无数私藏古瓷器、汉白" />
+
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

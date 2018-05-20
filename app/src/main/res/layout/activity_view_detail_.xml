@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".beijing_view_detail_Activity">
+
+    <TextView
+        android:id="@+id/chagncheng_textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="25dp"
+        android:text="景点介绍"
+        android:textSize="20sp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/chagncheng_textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/chagncheng_textView6"
+        android:layout_marginTop="73dp"
+        android:text="八达岭长城号称天下九塞之一，风光集巍峨险峻、秀丽苍翠于一体，是明长城景色中的精华，也是万里长城中非常著名的一段。“不到长城非好汉”，很多国人都以这里为登临长城的首选。
+八达岭长城关城为东窄西宽的梯形，有东西二门。东门额题“居庸外镇”，西门额题“北门锁钥”。关城向北延伸的长城是北长城，有敌楼12处。关城以南是南长城，有敌楼7处。南长城相比北长城的游客人数较少，如果时间充裕，可以先去走南长城，再走北长城。" />
+
+    <TextView
+        android:id="@+id/chagncheng_textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/chagncheng_textView6"
+        android:layout_marginBottom="235dp"
+        android:text="风景图片"
+        android:textSize="20sp"
+        android:textColor="#000000" />
+
+
+    <ImageView
+        android:id="@+id/fengji_beijing1"
+        android:layout_width="198dp"
+        android:layout_height="111dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="0dp"
+        android:src="@drawable/changcheng1" />
+
+    <ImageView
+        android:id="@+id/fengji_beijing2"
+        android:layout_width="122dp"
+        android:layout_height="124dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/chagncheng_textView8"
+        android:layout_marginTop="-235dp"
+        android:src="@drawable/changcheng2" />
+
+    <ImageView
+        android:id="@+id/fengji_beijing3"
+        android:layout_width="174dp"
+        android:layout_height="115dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="12dp"
+        android:src="@drawable/changcheng3" />
+
+    <ImageView
+        android:id="@+id/chagncheng_imageView"
+        android:layout_width="249dp"
+        android:layout_height="120dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/chagncheng_textView8"
+        android:layout_marginEnd="6dp"
+        android:layout_marginTop="-235dp"
+        app:srcCompat="@drawable/chagncheng4" />
+
+
+</RelativeLayout>

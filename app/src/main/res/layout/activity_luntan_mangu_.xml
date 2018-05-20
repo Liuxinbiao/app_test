@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/tab_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#3C3C3C">
+        <TextView
+            android:id="@+id/txt_top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#555555"
+            android:text= "HI!Go" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#F7F7F7"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/tab_menu"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/txt_deal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#E6E6E6"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/home"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:text="首页"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/txt_poi"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#E6E6E6"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/found"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:text="发现"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/txt_user"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#E6E6E6"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/chat"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:text="论坛"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/txt_more"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#E6E6E6"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/me"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:text="我"
+            android:textSize="10sp"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/div_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#808080"
+        android:layout_above="@id/tab_menu"/>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tab_title"
+        android:layout_above="@id/tab_menu"
+        android:background="#FFFFFF">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp">
+
+
+            <Button
+                android:id="@+id/luntan_daoyou"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="#EEEEEE"
+                android:text="当地导游"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/luntan_youban"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/luntan_daoyou"
+                android:background="#EEEEEE"
+                android:text="同城游伴"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/luntan_daoyoubang"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/luntan_youban"
+                android:background="#EEEEEE"
+                android:text="导游榜"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+
+            <Button
+                android:id="@+id/luntan_QA"
+                android:layout_width="84dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/luntan_daoyoubang"
+                android:background="#EEEEEE"
+                android:text="问答"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/mangu_imageView2"
+                android:layout_width="135dp"
+                android:layout_height="94dp"
+                android:layout_above="@+id/mangu_imageView3"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="-138dp"
+                app:srcCompat="@drawable/mangu_yufusi" />
+
+            <ImageView
+                android:id="@+id/mangu_imageView3"
+                android:layout_width="135dp"
+                android:layout_height="83dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="138dp"
+                app:srcCompat="@drawable/mangu_meinanhe" />
+
+            <ImageView
+                android:id="@+id/mangu_imageView4"
+                android:layout_width="134dp"
+                android:layout_height="92dp"
+                android:layout_above="@+id/mangu_imageView5"
+                android:layout_alignParentStart="true"
+                app:srcCompat="@drawable/mangu_dahuanggong" />
+
+            <ImageView
+                android:id="@+id/mangu_imageView5"
+                android:layout_width="133dp"
+                android:layout_height="94dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                app:srcCompat="@drawable/mangu_wofuosi" />
+
+            <TextView
+                android:id="@+id/mangu_textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="51dp"
+                android:layout_toEndOf="@+id/luntan_youban"
+                android:text="大皇宫" />
+
+            <TextView
+                android:id="@+id/mangu_textView7"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="148dp"
+                android:layout_marginTop="86dp"
+                android:maxLines="2"
+                android:text="位于曼谷市中心，紧靠湄南河，是曼谷王朝的象征，是旅游者去泰国的首选" />
+
+            <TextView
+                android:id="@+id/mangu_ttextView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="145dp"
+                android:layout_toEndOf="@+id/luntan_youban"
+                android:text="湄南河" />
+
+            <TextView
+                android:id="@+id/mangu_textView13"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/mangu_ttextView12"
+                android:maxLines="2"
+                android:text="是泰国河流中水量最大、长度最长的河流，有泰国“河流之母”之称，同时" />
+
+            <TextView
+                android:id="@+id/mangu_textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mangu_imageView3"
+                android:layout_toEndOf="@+id/luntan_youban"
+                android:text="玉佛寺" />
+
+            <TextView
+                android:id="@+id/mangu_textView16"
+                android:layout_width="237dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="131dp"
+                android:maxLines="2"
+                android:text="玉佛寺位于曼谷大皇宫的东北角，是曼谷的标志，是泰国旅游必到之地，历" />
+
+            <TextView
+                android:id="@+id/mangu_textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="66dp"
+                android:layout_toEndOf="@+id/luntan_youban"
+                android:text="卧佛寺" />
+
+            <TextView
+                android:id="@+id/mangu_textView19"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/mangu_textView7"
+                android:layout_marginBottom="35dp"
+                android:maxLines="2"
+                android:text="卧佛寺又名越菩寺，是曼谷最古老也是最大的寺院。寺庙紧邻大皇宫的南" />
+
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

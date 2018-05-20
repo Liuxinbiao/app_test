@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/allow_tongxunlu"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="27dp"
+        android:text="允许通过通讯录找到我"
+        android:textSize="18sp"
+        android:textColor="#1A1A1A"/>
+
+    <Switch
+        android:id="@+id/allow_switch9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/allow_tongxunlu"
+        android:layout_marginEnd="27dp" />
+
+    <TextView
+        android:id="@+id/allow_weibo"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/allow_tongxunlu"
+        android:layout_marginTop="111dp"
+        android:text="允许通过微博找到我"
+        android:textSize="18sp"
+        android:textColor="#1A1A1A"/>
+
+    <Switch
+        android:id="@+id/allow_weiboswitch10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/allow_switch9"
+        android:layout_alignTop="@+id/allow_weibo" />
+
+    <TextView
+        android:id="@+id/allow_nicheng1"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/allow_tongxunlu"
+        android:layout_marginTop="204dp"
+        android:text="允许通过昵称找到我"
+        android:textColor="#1A1A1A"
+        android:textSize="18sp" />
+
+    <Switch
+        android:id="@+id/allow_weibo_switch11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/allow_nicheng1"
+        android:layout_alignStart="@+id/allow_switch9" />
+
+    <TextView
+        android:id="@+id/allow_yanzheng"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/allow_tongxunlu"
+        android:layout_marginBottom="187dp"
+        android:text="加我朋友是需要验证"
+        android:textColor="#1A1A1A"
+        android:textSize="18sp" />
+
+    <Switch
+        android:id="@+id/allow_yanzheng_switch12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/allow_yanzheng"
+        android:layout_alignStart="@+id/allow_switch9" />
+
+    <TextView
+        android:id="@+id/allow_heimingdan"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="112dp"
+        android:text="      通讯录黑名单                                                   >"
+        android:textColor="#1A1A1A"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/allow_tongxunlu1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/allow_tongxunlu"
+        android:layout_below="@+id/allow_tongxunlu"
+        android:text="关闭后不会被通讯录好友找到" />
+
+    <TextView
+        android:id="@+id/allow_weibo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/allow_tongxunlu"
+        android:layout_below="@+id/allow_weibo"
+        android:text="关闭后不会被通微博好友找到" />
+
+    <TextView
+        android:id="@+id/textView48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/allow_tongxunlu"
+        android:layout_below="@+id/allow_nicheng1"
+        android:text="关闭后不会被搜索昵称找到" />
+
+    <TextView
+        android:id="@+id/allow_yanzheng1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/allow_tongxunlu"
+        android:layout_below="@+id/allow_yanzheng"
+        android:layout_marginTop="-187dp"
+        android:text="只有你同意后才可以添加你为好友" />
+</RelativeLayout>

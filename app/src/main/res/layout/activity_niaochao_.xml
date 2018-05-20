@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".beijing_view_detail_Activity">
+
+    <TextView
+        android:id="@+id/chagncheng_textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="25dp"
+        android:text="景点介绍"
+        android:textSize="20sp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/chagncheng_textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/chagncheng_textView6"
+        android:layout_marginTop="73dp"
+        android:text="鸟巢（国家体育场）位于北京中轴线的北端，是2008年北京奥运会的主体育场，以其高端大气的外形与举办的众多国际比赛，成为北京近几年最著名的新地标之一。独特的外观体育场外部由树枝般交错的钢材编织成“鸟巢”的形状，高低起伏的弧形线条使它看上去像律动的生命体，造型极具视觉冲击力。原先置于鸟巢顶部的祥云火炬塔现在搬到了鸟巢东北侧的火炬广场，在体育场外就能看到它。内部看点鸟巢内部密密麻麻将近10万个红色观众席颇为壮观，同时陈列着鸟巢建筑工程相关、奥运主题相关的一些展览." />
+
+    <TextView
+        android:id="@+id/chagncheng_textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/chagncheng_textView6"
+        android:layout_marginBottom="235dp"
+        android:text="风景图片"
+        android:textSize="20sp"
+        android:textColor="#000000" />
+
+    <ImageView
+        android:id="@+id/niaochao_imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        app:srcCompat="@drawable/niaochao" />
+
+    <ImageView
+        android:id="@+id/niaochao_imageView5"
+        android:layout_width="149dp"
+        android:layout_height="110dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        app:srcCompat="@drawable/niaochao1" />
+
+    <ImageView
+        android:id="@+id/niaochao_imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/niaochao_imageView5"
+        android:layout_alignParentStart="true"
+        app:srcCompat="@drawable/niaochao3" />
+
+    <ImageView
+        android:id="@+id/niaochao_imageView8"
+        android:layout_width="216dp"
+        android:layout_height="125dp"
+        android:layout_above="@+id/niaochao_imageView2"
+        android:layout_alignParentEnd="true"
+        app:srcCompat="@drawable/niaochao2" />
+
+
+</RelativeLayout>

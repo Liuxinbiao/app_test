@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/tab_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#3C3C3C">
+        <TextView
+            android:id="@+id/txt_top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#555555"
+            android:text= "HI!Go" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#F7F7F7"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/tab_menu"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/txt_deal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#E6E6E6"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/home"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:text="首页"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/txt_poi"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#E6E6E6"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/found"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:text="发现"
+            android:textSize="10sp"/>
+
+        <Button
+            android:id="@+id/txt_user"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#E6E6E6"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/chat"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:text="论坛"
+            android:textSize="10sp"/>
+
+        <Button
+            android:id="@+id/txt_more"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#E6E6E6"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/me"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:text="我"
+            android:textSize="10sp"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/div_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#808080"
+        android:layout_above="@id/tab_menu"/>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tab_title"
+        android:layout_above="@id/tab_menu"
+        android:background="#FFFFFF">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp">
+
+
+            <Button
+                android:id="@+id/luntan_daoyou"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="#EEEEEE"
+                android:text="当地导游"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/luntan_youban"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/luntan_daoyou"
+                android:background="#EEEEEE"
+                android:text="同城游伴"
+                android:textColor="#444444"
+                android:textSize="15sp"
+                />
+
+            <Button
+                android:id="@+id/luntan_daoyoubang"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/luntan_youban"
+                android:background="#EEEEEE"
+                android:text="导游榜"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+
+            <Button
+                android:id="@+id/luntan_QA"
+                android:layout_width="84dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/luntan_daoyoubang"
+                android:background="#EEEEEE"
+                android:text="  问答"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+            <ImageView
+                android:id="@+id/shanghai_dishini"
+                android:layout_width="94dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/luntan_daoyou"
+                app:srcCompat="@drawable/shanghai_dishini" />
+
+            <ImageView
+                android:id="@+id/shanghai_chenghuangmiao"
+                android:layout_width="94dp"
+                android:layout_height="82dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/shanghai_dishini"
+                app:srcCompat="@drawable/shanghai_chenghuangmiao" />
+
+            <ImageView
+                android:id="@+id/shanghai_mingzhu"
+                android:layout_width="94dp"
+                android:layout_height="93dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/shanghai_chenghuangmiao"
+                app:srcCompat="@drawable/shanghai_mingzhu" />
+
+            <ImageView
+                android:id="@+id/shanghai_zoo"
+                android:layout_width="94dp"
+                android:layout_height="87dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                app:srcCompat="@drawable/shanghai_yeshengdongyuyuan" />
+
+            <TextView
+                android:id="@+id/shanghai_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/shanghai_textView2"
+                android:layout_alignStart="@+id/shanghai_textView7"
+                android:layout_marginBottom="-82dp"
+                android:text="上海迪士尼度假区" />
+
+            <TextView
+                android:id="@+id/shanghai_textView2"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="12dp"
+                android:layout_marginTop="81dp"
+                android:maxLines="2"
+                android:text="中国大陆首个迪士尼乐园位于上海市浦东新区，你可以此亲历许多全球迪士尼" />
+
+            <TextView
+                android:id="@+id/shanghai_textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="160dp"
+                android:layout_marginTop="147dp"
+                android:text="城隍庙" />
+
+            <TextView
+                android:id="@+id/shanghai_textView4"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/shanghai_textView2"
+                android:layout_below="@+id/shanghai_textView3"
+                android:maxLines="2"
+                android:text="城隍庙旅游区坐落着豫园和老城隍庙两个主要景点，是初到上海的游客必去之" />
+
+            <TextView
+                android:id="@+id/shanghai_textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/shanghai_textView3"
+                android:layout_marginBottom="148dp"
+                android:text="东方明珠" />
+
+            <TextView
+                android:id="@+id/shanghai_textView6"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/shanghai_textView2"
+                android:layout_below="@+id/shanghai_textView5"
+                android:layout_marginTop="-148dp"
+                android:maxLines="2"
+                android:text="东方明珠矗立于上海浦东陆家嘴，与外滩隔江相望，是上海的标志性建筑" />
+
+            <TextView
+                android:id="@+id/shanghai_textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/shanghai_textView8"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="128dp"
+                android:text="上海野生动物园" />
+
+            <TextView
+                android:id="@+id/shanghai_textView8"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/textView14"
+                android:layout_alignStart="@+id/shanghai_textView2"
+                android:maxLines="2"
+                android:text="上海野生动物园汇集了世界各地的动物。你可以乘坐游览车观察东北虎、非" />
+
+            <TextView
+                android:id="@+id/shanghai_textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/shanghai_textView2"
+                android:background="#EEEEEE" />
+
+            <TextView
+                android:id="@+id/shanghai_textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/shanghai_textView5"
+                android:layout_alignParentStart="true"
+                android:background="#EEEEEE" />
+
+            <TextView
+                android:id="@+id/shanghai_textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/shanghai_mingzhu"
+                android:layout_alignParentStart="true"
+                android:background="#EEEEEE" />
+
+            <TextView
+                android:id="@+id/shanghai_textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/luntan_daoyou"
+                android:background="#EEEEEE" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:background="#EEEEEE"  />
+
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>
